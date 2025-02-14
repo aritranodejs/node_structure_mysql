@@ -1,3 +1,6 @@
+# Req packages for scratch project with mysql with sequelize orm
+npm i express mysql2 sequelize bcrypt ejs cors express-group-routes express-rate-limit compression helmet http jsonwebtoken node-input-validator nodemailer nodemon path dotenv
+
 # express-node-mysql
 Local: npm start
 Server: pm2 start --name "project-name"
