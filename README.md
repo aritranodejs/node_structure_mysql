@@ -63,4 +63,8 @@ sequelize db:migrate && sequelize db:seed:all
 npx sequelize-cli
 instead of
 sequelize
+
+# Project Structure
+![image](https://github.com/user-attachments/assets/18198f03-2f83-4b81-8eb4-afcc11f16281)
+
 # node_structure_mysql
