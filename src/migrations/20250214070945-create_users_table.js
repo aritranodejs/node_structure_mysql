@@ -26,6 +26,9 @@ module.exports = {
       mobile: {
         type: Sequelize.STRING
       },
+      password: {
+        type: Sequelize.STRING
+      },
       status: {
         type: Sequelize.ENUM('active', 'inactive', 'delete'),
         defaultValue: 'active',
