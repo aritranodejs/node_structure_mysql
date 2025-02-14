@@ -77,10 +77,15 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
+const authRoutes = require('./routes/auth');
+app.use('/api/auth', limiter, authRoutes); // Apply rate limiting for security
 
+const apiRoutes = require('./routes/api');
+app.use('/api', apiRoutes); 
 
 // Set the correct views directory
 app.set('views', path.resolve(__dirname, 'views'));
+
 // ejs View Engine
 app.set('view engine', 'ejs');
 
