@@ -1,4 +1,4 @@
-# Req packages for scratch project with mysql with sequelize orm(with security)
+# Req packages for scratch project with mysql with sequelize orm(with high security)
 npm i express mysql2 sequelize bcrypt ejs cors express-group-routes express-rate-limit compression helmet http jsonwebtoken node-input-validator nodemailer nodemon path dotenv
 
 # express-node-mysql
@@ -68,6 +68,6 @@ instead of
 sequelize
 
 # Project Structure
-![image](https://github.com/user-attachments/assets/656cf993-8cb7-4f9b-b6be-057af42f01df)
+![image](https://github.com/user-attachments/assets/50f98aa1-7899-4207-b06f-cec56699bac0)
 
 # node_structure_mysql
