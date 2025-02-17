@@ -68,6 +68,6 @@ instead of
 sequelize
 
 # Project Structure
-![image](https://github.com/user-attachments/assets/50f98aa1-7899-4207-b06f-cec56699bac0)
+![image](https://github.com/user-attachments/assets/a179c2dc-f061-400c-885c-c455e620fb58)
 
 # node_structure_mysql
