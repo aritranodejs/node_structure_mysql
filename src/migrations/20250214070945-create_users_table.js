@@ -10,15 +10,22 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.BIGINT
       },
-      firstName: {
-        type: Sequelize.STRING
-      },
-      lastName: {
+      name: {
         type: Sequelize.STRING
       },
       email: {
         type: Sequelize.STRING,
         unique: true
+      },
+      emailToken: {
+        type: Sequelize.STRING
+      },
+      emailTokenExpiry: {
+        type: Sequelize.DATE
+      },
+      emailVerified: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       },
       countryCode: {
         type: Sequelize.STRING
@@ -26,8 +33,44 @@ module.exports = {
       mobile: {
         type: Sequelize.STRING
       },
+      otp: {
+        type: Sequelize.STRING
+      },
+      otpExpiry: {
+        type: Sequelize.DATE
+      },
       password: {
         type: Sequelize.STRING
+      },
+      passwordResetToken: {
+        type: Sequelize.STRING
+      },
+      passwordResetTokenExpiry: {
+        type: Sequelize.DATE
+      },
+      authToken : {
+        type: Sequelize.STRING
+      },
+      role: {
+        type: Sequelize.ENUM('admin', 'user'),
+        defaultValue: 'user',
+        allowNull: false,
+      },
+      isOnline: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
+      },
+      lastSeen: {
+        type: Sequelize.DATE
+      },
+      avatar: {
+        type: Sequelize.STRING
+      },
+      cover: {
+        type: Sequelize.STRING
+      },
+      bio: {
+        type: Sequelize.TEXT
       },
       status: {
         type: Sequelize.ENUM('active', 'inactive', 'delete'),
@@ -43,7 +86,6 @@ module.exports = {
         type: Sequelize.DATE
       },
       deletedAt: {
-        allowNull: false,
         type: Sequelize.DATE
       }
     });

@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 
 // Common Response
-const response = require('../helpers/response');
+const { response } = require('../helpers/response');
 const accessTokenSecret = process.env.JWT_SECRET || "jwtsecret";
 
 const generateAuthToken = ({ id, role, name, email }) => {
